@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  /* height: 100vh; */
+  /* width: 100vw; */
+}
+
 .container * {
   border: 1px solid black;
 }
@@ -61,8 +66,12 @@
   grid-template-rows: 1fr;
 }
 
-.projects {
-  /* grid-area: 1/; */
+.projects .cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* justify-content: space-around; */
+  height: 100%;
+  gap: 10px;
 }
 
 .current {
